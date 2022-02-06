@@ -1,0 +1,105 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2010 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper]{moderncv}
+
+
+
+% moderncv themes
+%\moderncvtheme[blue]{casual}                 % optional argument are 'blue' (default), 'orange', 'red', 'green', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
+\moderncvtheme[orange]{classic}                % idem
+
+% character encoding
+\usepackage[utf8]{inputenc}                   % replace by the encoding you are using
+
+% adjust the page margins
+\usepackage[scale=0.9]{geometry}
+\setlength{\hintscolumnwidth}{3cm}						% if you want to change the width of the column with the dates
+%\AtBeginDocument{\setlength{\maketitlenamewidth}{6cm}}  % only for the classic theme, if you want to change the width of your name placeholder (to leave more space for your address details
+\AtBeginDocument{\recomputelengths}                     % required when changes are made to page layout lengths
+
+% personal data
+%\photo[64pt]{picture.png}                         % '64pt' is the height the picture must be resized to and 'picture' is the name of the picture file; optional, remove the line if not wanted
+
+\firstname{Rama}
+\familyname{Herbin}
+%\title{}               % optional, remove the line if not wanted
+
+
+%\address{21 Rue Diderot}{38000 GRENOBLE}    % optional, remove the line if not wanted
+\mobile{06 52 72 44 19}                    % optional, remove the line if not wanted
+%\phone{phone (optional)}                      % optional, remove the line if not wanted
+%\fax{fax (optional)}                          % optional, remove the line if not wanted
+\email{rama.herbin@gmail.com}                      % optional, remove the line if not wanted
+\phone{Né le 4 Novembre 2000}                % optional, remove the line if not wanted
+\homepage{www.rama.click}                % optional, remove the line if not wanted
+
+%\quote{}                % optional, remove the line if not wanted
+
+% to show numerical labels in the bibliography; only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+
+%\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+\maketitle
+
+\section{Formation}
+
+\cventry{2020 - 2021}{Licence Pro Dev web}{$\:$Applications web, e-commerce et big data}{Aix-en-Provence}{}{}
+
+\cventry{2018 - 2020}{DUT Informatique}{IUT de Valence}{Valence}{}{}
+
+\cventry{2018}{Baccalauréat}{Lycée Armorin}{Crest}{}{}
+%\vspace{0.5cm}
+
+
+\section{Expériences}
+\cventry{Septembre 2021 - Maintenant}{Développeur web}{Fleur de Papier}{CDD}{\textit{Développement d'applications interactives sur un framework MVC single-page / ou avec Vue.js {\linebreak \textbf{ Projets notables :}}} } {\begin{itemize}
+	\item Jeux pédagogiques pour l'Atrium à Rouen
+	\item Dispositifs interactifs pour la BNF
+\end{itemize}} {}
+\cventry{Septembre 2020 - Septembre 2021}{Développeur web Junior}{Fleur de Papier}{Alternance}{\textit{Développement d'applications de médiation culturelle en Javascript sur un framework MVC single-page} {\linebreak \textbf{ Projet principal :}}} {\begin{itemize}
+	\item Développement des interfaces des bornes du parcours muséographique de La Contemporaine
+\end{itemize}}  {}
+\cventry{Mai 2020 - Juillet 2020}{Stage}{Fleur de Papier}{Eurre}{\textit{Intégration web, création d'applications pour des usages internes}}{}
+\cventry{Mars 2020 - Avril 2020}{Projet}{IUT d'Aix}{Aix-en-Provence}{\textit{Création d'un site web dynamique avec le framework Django (CRUD, Authentification, Session...)}}{}
+
+\cventry{Septembre 2019 - Juin 2020}{Projet}{IUT de Valence}{Valence}{\textit{Création d'une borne interactive}}{Borne permettant aux étudiants de se renseigner sur les entreprises locales. Utilisation d'un Raspberry Pi, OpenStreetMap (uMap), et technologies web.}
+
+\cventry{Mars 2019 - Juin 2019}{Projet}{IUT de Valence}{Valence}{\textit{Jeu de UNO en Java}}{Introduction à la programmation orientée objet et coopération en équipe.}
+
+
+\section{Compétences}
+\subsection{Développement}
+\cvline{Front-end}{HTML/(S)CSS, JQuery, Javascript (ES6), GSAP, Vue.js, Three.js (débutant), React (notions)}
+\cvline{Back-end}{PHP, Node.js, Django, SQL, MongoDB, Docker}
+\cvline{Méthodologie}{Design patterns (MVC, Singleton...), Clean Code, Merise, UML, Agile}
+\cvline{Software/Tools}{VSCode, Git, Adobe Creative Suite, Figma, Virtual Box, LAMP, Vercel}
+\cvcomputer{Environnement}{Linux, MacOs, Windows}{}{}
+
+\subsection{Langues}
+\cvlanguage{Français}{Maternelle}{}
+\cvlanguage{Anglais}{C1}{}
+
+
+\section{Centres d'intêret}
+\cvline{Sports}{\small Musculation}
+\cvline{Music}{\small Guitare}
+\cvline{Culture}{\small Films (VOST) et photographie}
+
+\end{document}
+%% end of file `template_en.tex'.
