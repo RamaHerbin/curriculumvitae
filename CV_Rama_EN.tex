@@ -8,12 +8,15 @@
 
 \documentclass[11pt,a4paper]{moderncv}
 
+
+
 % moderncv themes
 %\moderncvtheme[blue]{casual}                 % optional argument are 'blue' (default), 'orange', 'red', 'green', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
 \moderncvtheme[orange]{classic}                % idem
 
 % character encoding
 \usepackage[utf8]{inputenc}                   % replace by the encoding you are using
+\usepackage{multicol}
 
 % adjust the page margins
 \usepackage[scale=0.9]{geometry}
@@ -35,7 +38,7 @@
 %\fax{fax (optional)}                          % optional, remove the line if not wanted
 \email{rama.herbin@gmail.com}                      % optional, remove the line if not wanted
 \phone{Born November 4, 2000}                % optional, remove the line if not wanted
-\homepage{www.rama.click}                % optional, remove the line if not wanted
+\homepage{www.rama.app}                % optional, remove the line if not wanted
 
 %\quote{}                % optional, remove the line if not wanted
 
@@ -56,43 +59,67 @@
 \maketitle
 
 \section{Studies}
+\cventry{2022 - 2024}{Gobelins}{$\:$Design \& Management of interactive innovation}{Paris}{}{Master Expert in interactive digital creation}
 
-\cventry{2020 - 2021}{Licence Pro Dev web}{$\:$Web applications, e-commerce and big data}{Aix-en-Provence}{}{An one year professional Diploma}
+\cventry{2020 - 2021}{Licence Pro Dev web}{$\:$Web applications, e-commerce and big data}{Aix-en-Provence}{}{A one year professional Diploma}
 
 \cventry{2018 - 2020}{DUT Informatique}{IUT de Valence}{Valence}{}{A two-year Diploma in Computing taken at the Institute of Technology in Valence (UGA, France)}
 
-\cventry{2018}{High School diploma}{Armorin high school}{Crest}{}{Equivalent of a High School Leaving  diploma in science}
+\cventry{2018}{Baccalauréat}{Lycée Armorin}{Crest}{}{}
 %\vspace{0.5cm}
 
 
-\section{ Experiences}
-\cventry{September 2020 - Now}{Junior web developer}{Fleur de Papier}{Work-study program}{\textit{Web development, creation of interactive apps for cultural purpose}}{}
 
-\cventry{May 2020 - July 2020}{Intership}{Fleur de Papier}{Eurre}{\textit{Web integration, Development of web applications tools for internal usage}}{}
-\cventry{March 2020 - April 2020}{Project}{IUT d'Aix}{Aix-en-Provence}{\textit{Creation of a website with Django framework (CRUD, Authentication, Session...)}}{}
+\section{Experiences}
+\cventry{September 2022 - Present}{Interactive Developer}{Fleur de Papier}{Work-study program}{\textit{Creative application development on Nuxt 3 with Directus CMS}} {}
+\cventry{September 2021 - September 2022}{Web developer}{Fleur de Papier}{Contract}{\textit{Development of interactive applications on a single-page MVC framework / or with Vue.js {\linebreak \textbf{ Projects hightlight :}}} } {\begin{itemize}
+	\item Educational games for the Atrium in Rouen (2022)
+	\item Interactive devices for the French National Library (2022-Present)
+\end{itemize}} {}
+\cventry{September 2020 - September 2021}{Junior Web Developer}{Fleur de Papier}{Work-study program}{\textit{Development of cultural mediation applications in Javascript on a single-page MVC framework} {\linebreak \textbf{ Main project :}}} {\begin{itemize}
+	\item Development of the interfaces of the kiosks of the museum trail of La Contemporaine
+\end{itemize}}  {}
+\cventry{May 2020 - July 2020}{Intership}{Fleur de Papier}{Eurre}{\textit{Web integration, Development of web applications tools for internal use}}{}
+\cventry{March 2020 - April 2020}{Project}{IUT d'Aix}{Aix-en-Provence}{\textit{Creation of a website with Django framework (CRUD, Authentication, Sessions)}}{}
 
-\cventry{September 2019 - June 2020}{Project}{IUT de Valence}{Valence}{\textit{Creation of an interactive terminal}}{Obect-Oriented programming and Teamwork programming tools (Github).}
+\cventry{September 2019 - June 2020}{Project}{IUT de Valence}{Valence}{\textit{Creation of an interactive terminal}}{A kiosk for students to find out about local businesses. Created with a Raspberry Pi, OpenStreetMap (uMap) and web technologies}
 
-\cventry{May 2017 - June 2017}{Project}{IUT de Valence}{Valence}{\textit{UNO Game in Java}}{Introduction to Obect-Oriented programming, and Teamwork}
 
 
 \section{Qualifications}
-\subsection{Computer Science}
-\cvline{Front-end}{HTML/(S)CSS, JQuery, Javascript (ES6), GSAP}
-\cvline{Back-end}{PHP, Node.js, SQL, MongoDB, Docker}
-\cvline{Methods}{Design patterns (MVC, Singleton...), Clean Code, Merise, UML, Agile}
-\cvline{Software/Tools}{VSCode, Git, Adobe Creative Suite, Figma, Virtual Box, LAMP, Vercel}
+\subsection{Development}
+\cvline{Front-end}{HTML/(S)CSS, Javascript (ES6), GSAP, Vue.js, Nuxt 3, WebGL/Three.js, React}
+\cvline{Back-end}{DirectusCMS, Node.js, Django, PostgreSQL, MongoDB }
+\cvline{Methodology}{Design patterns (MVC, Singleton...), Clean Code, Merise, UML, Agile}
+\cvline{Software/Tools}{VSCode, Git, Vim, Adobe Creative Suite, Figma, Virtual Box, Docker, Portainer, Vercel}
 \cvcomputer{Environnement}{Linux, MacOs, Windows}{}{}
 
 \subsection{Languages}
 \cvlanguage{French}{Fluent}{}
-\cvlanguage{English}{Spoken, Written, Understood}{}
+\cvlanguage{English}{C1}{}
 
 
-\section{Additional skills and interest}
+\section{Additional skills and interests}
+
+
+ \noindent\begin{minipage}[t]{0.48\textwidth}
+
 \cvline{Sports}{\small Strength training}
 \cvline{Music}{\small Guitar (12 years)}
+
+
+\end{minipage}%
+\hfill%
+\begin{minipage}[t]{0.48\textwidth}
+
+
 \cvline{Culture}{\small Movies (VOST) and photography}
+
+\end{minipage}
+
+\AtBeginShipout{\AtBeginShipoutUpperLeft{%
+  \put(\paperwidth-2.8cm\relax,-29.4cm){{\tiny Made with LaTeX}}%
+}}
 
 \end{document}
 %% end of file `template_en.tex'.
